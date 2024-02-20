@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Typography from '@mui/material/Typography'
+import  Button  from '@mui/material/Button';
+ import  TextField  from '@mui/material/TextField';
+ import FaceIcon from '@mui/icons-material/Face';
+ import  Avatar  from '@mui/material/Avatar';
+import Form from './components/Form';
+
 
 function App() {
-  return (
+   const name="aishu";
+   alert(name);
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Typography variant='h1'>dell</Typography>
+       <TextField size='small' label="Name" autoFocus placeholder='Enter your name' multiline
+      />
+      <Button variant='contained'>hi</Button>
+      <Avatar style={{backgroundColor:"pink"}}>a</Avatar>
+      <FaceIcon/>
+      <Form/> 
+ 
+        </div>
   );
 }
-
+    
 export default App;
